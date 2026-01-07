@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/borsajs-demo/', // GitHub Pages base path - repository name
+  // base: '/borsajs-demo/', // Only needed for GitHub Pages
 })
