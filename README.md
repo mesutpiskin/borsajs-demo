@@ -1,0 +1,70 @@
+# borsajs Demo UI
+
+Modern, interaktif web uygulaması - **borsajs** kütüphanesinin tüm yeteneklerini sergiler.
+
+## 🚀 Özellikler
+
+Bu demo aşağıdaki **10 API modülünü** içerir:
+
+- 📈 **Ticker** - BIST hisse senetleri anlık fiyatları
+- 💱 **FX** - Döviz kurları ve emtia fiyatları
+- ₿ **Crypto** - Kripto para fiyatları (BtcTurk)
+- 📊 **Index** - BIST endeksleri
+- 📉 **Inflation** - Enflasyon verileri ve hesaplama
+- 📢 **KAP** - Kamu Aydınlatma Platformu bildirimleri
+- 📅 **Economic Calendar** - Ekonomik takvim ve etkinlikler
+- 📜 **Bond** - Tahvil getirileri
+- 🔍 **Screener** - Hisse tarayıcı
+- ⚡ **VIOP** - Vadeli işlem ve opsiyon piyasası
+
+## 🎨 Tasarım
+
+- **Dark Mode** - Göz yormayan karanlık tema
+- **Gradient Colors** - Modern mor/mavi gradient renk paleti
+- **Glassmorphism** - Cam efektli kartlar ve componentler
+- **Smooth Animations** - Akıcı geçişler ve animasyonlar
+- **Responsive** - Tüm ekran boyutlarında mükemmel görünüm
+
+## 🛠️ Teknolojiler
+
+- **Vite** - Hızlı geliştirme ortamı
+- **React** - UI framework
+- **TypeScript** - Tip güvenliği
+- **borsajs** - Finansal veri API'si
+- **Chart.js** - Grafikler (opsiyonel)
+
+## 📦 Kurulum
+
+```bash
+npm install
+```
+
+## 🚀 Çalıştırma
+
+```bash
+npm run dev
+```
+
+Tarayıcınızda `http://localhost:5173` adresine gidin.
+
+## 📝 Build
+
+```bash
+npm run build
+```
+
+## 🔗 Linkler
+
+- **borsajs GitHub**: https://github.com/mesutpiskin/borsajs
+- **borsajs NPM**: https://www.npmjs.com/package/borsajs
+- **Dokümantasyon**: https://github.com/mesutpiskin/borsajs/blob/main/README.md
+
+## 📄 Lisans
+
+Bu demo proje, borsajs kütüphanesinin yeteneklerini göstermek için oluşturulmuştur.
+borsajs Apache 2.0 lisansı altında dağıtılmaktadır.
+
+## 👨‍💻 Geliştirici
+
+**Mesut Piskin**
+- GitHub: [@mesutpiskin](https://github.com/mesutpiskin)
