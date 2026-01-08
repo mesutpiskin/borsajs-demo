@@ -1,13 +1,27 @@
 {
     "hosting": {
         "site": "borsajs-showcase",
-        "public": "dist",
+        "public": "ui/dist",
         "ignore": [
             "firebase.json",
             "**/.*",
             "**/node_modules/**"
         ],
         "rewrites": [
+            {
+                "source": "/api",
+                "function": {
+                    "functionId": "api",
+                    "region": "us-central1"
+                }
+            },
+            {
+                "source": "/api/**",
+                "function": {
+                    "functionId": "api",
+                    "region": "us-central1"
+                }
+            },
             {
                 "source": "**",
                 "destination": "/index.html"
@@ -33,5 +47,12 @@
                 ]
             }
         ]
-    }
+    },
+    "functions": [
+        {
+            "source": "api",
+            "codebase": "api",
+            "runtime": "nodejs20"
+        }
+    ]
 }
