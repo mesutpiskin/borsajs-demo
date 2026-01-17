@@ -94,3 +94,13 @@ export const viopAPI = {
     getIndexFutures: () => apiRequest<any>('/viop/index-futures'),
     getCurrencyFutures: () => apiRequest<any>('/viop/currency-futures'),
 };
+// TCMB API
+export const tcmbAPI = {
+    getRates: () => apiRequest<any>('/tcmb/rates'),
+};
+
+// Eurobond API
+export const eurobondAPI = {
+    getList: (currency?: string) => apiRequest<any>(`/eurobond${currency ? `?currency=${currency}` : ''}`),
+    getByISIN: (isin: string) => apiRequest<any>(`/eurobond/${isin}`),
+};

@@ -2,6 +2,7 @@ import express from 'express';
 import * as functions from 'firebase-functions';
 import { corsMiddleware, errorHandler } from './middleware/index.js';
 // Import routes
+// Import routes
 import tickerRouter from './routes/ticker.js';
 import fxRouter from './routes/fx.js';
 import cryptoRouter from './routes/crypto.js';
@@ -9,6 +10,8 @@ import indexRouter from './routes/index-route.js';
 import inflationRouter from './routes/inflation.js';
 import kapRouter from './routes/kap.js';
 import miscRouter from './routes/misc.js';
+import tcmbRouter from './routes/tcmb.js';
+import eurobondRouter from './routes/eurobond.js';
 const app = express();
 // Middleware
 app.use(corsMiddleware);
@@ -28,6 +31,8 @@ app.use('/api/crypto', cryptoRouter);
 app.use('/api/index', indexRouter);
 app.use('/api/inflation', inflationRouter);
 app.use('/api/kap', kapRouter);
+app.use('/api/tcmb', tcmbRouter);
+app.use('/api/eurobond', eurobondRouter);
 app.use('/api', miscRouter); // calendar, bonds, screener, viop endpoints
 // Error handler
 app.use(errorHandler);

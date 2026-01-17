@@ -11,6 +11,8 @@ import { EconomicCalendarSection } from './sections/EconomicCalendarSection';
 import { BondSection } from './sections/BondSection';
 import { ScreenerSection } from './sections/ScreenerSection';
 import { VIOPSection } from './sections/VIOPSection';
+import { TCMBSection } from './sections/TCMBSection';
+import { EurobondSection } from './sections/EurobondSection';
 
 function App() {
   const [activeSection, setActiveSection] = useState('ticker');
@@ -25,7 +27,9 @@ function App() {
     { id: 'economic-calendar', name: '📅 Calendar', label: 'Ekonomik Takvim' },
     { id: 'bond', name: '📜 Bond', label: 'Tahvil' },
     { id: 'screener', name: '🔍 Screener', label: 'Tarayıcı' },
-    { id: 'viop', name: '⚡ VIOP', label: 'Türev' }
+    { id: 'viop', name: '⚡ VIOP', label: 'Türev' },
+    { id: 'tcmb', name: '🏦 TCMB', label: 'Faiz Oranları' },
+    { id: 'eurobond', name: '🇪🇺 Eurobond', label: 'Euro Tahvil' }
   ];
 
   const scrollToSection = (id: string) => {
@@ -124,6 +128,8 @@ function App() {
         <BondSection />
         <ScreenerSection />
         <VIOPSection />
+        <TCMBSection />
+        <EurobondSection />
       </main>
 
       {/* Footer */}
